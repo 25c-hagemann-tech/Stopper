@@ -1,23 +1,30 @@
 /* Alapvető beállítások és háttér */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    background-color: lightskyblue;
     min-height: 100vh;
     margin: 0;
+    padding-top: 80px;
     display: flex;
-    justify-content: center;
+    flex-direction: column; 
+    justify-content: flex-start;;
     align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    padding: 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row; 
+    gap: 30px;           
+    flex-wrap: wrap;     
+    justify-content: center;
 }
 
 /* Kártyák konténere */
 .box {
-    background: #ffffff;
+    background: white;
     padding: 30px 25px;
     border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 25px lightblue;
     text-align: center;
     width: 280px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -25,13 +32,23 @@ body {
 
 .box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 15px 30px lightblue;
+}
+
+.spacer {
+    height: 38px; /* A beviteli mező magasságához igazítva */
 }
 
 /* Címsorok */
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
 h2 {
     margin-top: 0;
-    color: #333;
+    color: black;
     font-size: 22px;
     font-weight: 600;
 }
@@ -42,11 +59,11 @@ h2 {
     font-weight: 700;
     margin: 20px 0;
     font-family: 'Courier New', Courier, monospace;
-    color: #1e293b;
-    background-color: #f8fafc;
+    color: black;
+    background-color: lightblue;
     padding: 10px;
     border-radius: 8px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid lightblue;
     letter-spacing: 2px;
 }
 
@@ -55,7 +72,7 @@ input[type="number"] {
     width: 70px;
     padding: 8px;
     font-size: 16px;
-    border: 2px solid #cbd5e1;
+    border: 2px solid black;
     border-radius: 6px;
     text-align: center;
     outline: none;
@@ -63,7 +80,7 @@ input[type="number"] {
 }
 
 input[type="number"]:focus {
-    border-color: #3b82f6;
+    border-color: blue;
 }
 
 /* Gombok közös stílusa */

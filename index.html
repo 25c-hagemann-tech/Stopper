@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stopper</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Index.css">
 </head>
 <body><!-- STOPPER -->
-    <div class="box">
-        <h2>Stopper</h2>
-        <div class="display" id="stopwatch-display">00:00.0</div>
-        <button onclick="startStopwatch()">Indítás</button>
-        <button onclick="pauseStopwatch()">Szünet</button>
-        <button onclick="resetStopwatch()">Nullázás</button>
-    </div>
-
-    <!-- VISSZASZÁMLÁLÓ -->
-    <div class="box">
-        <h2>Visszaszámláló</h2>
-        <div>
-            <input type="number" id="timer-input" value="10" min="1"> másodperc
+    <h1>A világ legjobb Stoper és Visszaszámláló weboldala!</h1><br><br><br>
+    <div class="cards-container">
+        <div class="box">
+            <h2>Stopper</h2>
+            <div class="spacer"></div>
+            <div class="display" id="stopwatch-display">00:00.0</div>
+            <button onclick="startStopwatch()">Indítás</button>
+            <button onclick="pauseStopwatch()">Megállítás</button>
+            <button onclick="resetStopwatch()">Nullázás</button>
         </div>
-        <div class="display" id="timer-display">00:10</div>
-        <button onclick="startTimer()">Indítás</button>
-        <button onclick="pauseTimer()">Szünet</button>
-        <button onclick="resetTimer()">Nullázás</button>
+    
+
+        <!-- VISSZASZÁMLÁLÓ -->
+        <div class="box">
+            <h2>Visszaszámláló</h2>
+            <div>
+                <input type="number" id="timer-input" value="10" min="1"> másodperc
+            </div>
+            <div class="display" id="timer-display">00:10</div>
+            <button onclick="startTimer()">Indítás</button>
+            <button onclick="pauseTimer()">Megállítás</button>
+            <button onclick="resetTimer()">Kezdőérték</button>
+        </div>
     </div>
 
     <script>
