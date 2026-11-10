@@ -8,7 +8,7 @@
     -Egy nagyon menő stopper és visszaszámláló weboldal készítése meg eladni sok pénzért🤑
 
 ## Indítás
-Az index.html megnyitása böngészőben.
+    -Az index.html megnyitása böngészőben.
 
 ## Kész funkciók
     -Működő stopper és visszaszámláló.
