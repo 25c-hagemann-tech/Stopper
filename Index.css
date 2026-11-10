@@ -1,0 +1,108 @@
+/* Alapvető beállítások és háttér */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Kártyák konténere */
+.box {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    width: 280px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Címsorok */
+h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Idő kijelzők */
+.display {
+    font-size: 38px;
+    font-weight: 700;
+    margin: 20px 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: #1e293b;
+    background-color: #f8fafc;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    letter-spacing: 2px;
+}
+
+/* Beviteli mező (Visszaszámláló) */
+input[type="number"] {
+    width: 70px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #cbd5e1;
+    border-radius: 6px;
+    text-align: center;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="number"]:focus {
+    border-color: #3b82f6;
+}
+
+/* Gombok közös stílusa */
+button {
+    padding: 10px 14px;
+    margin: 4px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+/* Gombok egyedi színei funkció szerint */
+button:nth-of-type(1) { /* Indítás */
+    background-color: #22c55e;
+    color: white;
+}
+button:nth-of-type(1):hover {
+    background-color: #16a34a;
+}
+
+button:nth-of-type(2) { /* Szünet */
+    background-color: #f59e0b;
+    color: white;
+}
+button:nth-of-type(2):hover {
+    background-color: #d97706;
+}
+
+button:nth-of-type(3) { /* Nullázás */
+    background-color: #ef4444;
+    color: white;
+}
+button:nth-of-type(3):hover {
+    background-color: #dc2626;
+}
